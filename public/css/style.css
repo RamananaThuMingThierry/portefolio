@@ -47,7 +47,16 @@ NAVBAR
 ========================= */
 .navbar {
     background-color: var(--color-bg-primary);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Navbar après scroll */
+.navbar.scrolled {
+    background-color: rgba(31, 59, 92, 0.9);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
 
 .navbar .nav-link {
     color: var(--color-text-light);
