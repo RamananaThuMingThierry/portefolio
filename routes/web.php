@@ -1,17 +1,8 @@
 <?php
 
-use App\Http\Controllers\FrontEnd\BaseController;
+use App\Http\Controllers\FrontEnd\DownloadCVController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+Route::get('/cv/telecharger', [DownloadCVController::class, 'download'])->name('cv.download');
 
-Route::get('/', [BaseController::class, 'index'])->name('home');
+Route::view('/{any}', 'app')->where('any', '.*');

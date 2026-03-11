@@ -1,0 +1,13 @@
+{
+    "title": "ABOUT ME",
+    "developerTitle": "Passionate Developer",
+    "description1": "Full-stack web developer with extensive experience in creating modern, high-performance web applications. My journey has equipped me with proficiency in various technologies and frameworks to meet the diverse needs of my clients.",
+    "description2": "I am currently expanding my skill set with Flutter for mobile development, and I use Figma to design intuitive and aesthetically pleasing user interfaces.",
+    "description3": "My goal is to create web solutions that combine technical performance, attractive design, and optimal user experience.",
+    "cleanCodeTitle": "Clean Code",
+    "cleanCodeDescription": "I prioritize maintainable, well-structured, and documented code to ensure the quality of projects.",
+    "architectureTitle": "Architecture",
+    "architectureDescription": "I design scalable applications with clear architecture and good practices.",
+    "performanceTitle": "Performance",
+    "performanceDescription": "I optimize loading speed, SEO, and user experience for fast and efficient websites."
+}

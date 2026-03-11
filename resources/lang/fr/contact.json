@@ -1,0 +1,16 @@
+{
+    "title": "CONTACT",
+    "subtitle": "Un projet en tête ? N'hésitez pas à me contacter via le formulaire ci-dessous ou par email.",
+    "contactMe": "Contactez-moi",
+    "contactInfo": "Je suis à votre écoute pour toute demande de renseignement ou de collaboration.",
+    "emailTitle": "Email",
+    "phoneTitle": "Téléphone",
+    "addressTitle": "Adresse",
+    "availabilityTitle": "Disponibilité",
+    "availabilityText": "Je suis actuellement disponible pour discuter de votre projet.",
+    "available": "Disponible",
+    "nameLabel": "Nom",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "submitButton": "Envoyer"
+}

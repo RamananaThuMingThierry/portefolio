@@ -1,0 +1,16 @@
+{
+    "title": "CONTACT",
+    "subtitle": "A project in mind? Feel free to contact me via the form below or by email.",
+    "contactMe": "Contact Me",
+    "contactInfo": "I am here to answer any inquiries or collaboration requests.",
+    "emailTitle": "Email",
+    "phoneTitle": "Phone",
+    "addressTitle": "Address",
+    "availabilityTitle": "Availability",
+    "availabilityText": "I am currently available to discuss your project.",
+    "available": "Available",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "submitButton": "Send"
+}

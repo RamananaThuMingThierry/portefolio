@@ -1,0 +1,16 @@
+{
+    "title": "Skills",
+    "subtitle": "A range of mastered technologies to create complete and high-performing solutions",
+    "frontend": {
+      "title": "Frontend"
+    },
+    "backend": {
+      "title": "Backend"
+    },
+    "mobile": {
+      "title": "Mobile"
+    },
+    "toolsDesign": {
+      "title": "Tools & Design"
+    }
+}

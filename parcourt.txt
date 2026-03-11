@@ -1,0 +1,11 @@
+# Installer les dépendances
+
+composer require laravel/ui
+php artisan ui react
+npm install
+npm install -D @vitejs/plugin-react
+npm i bootstrap
+npm i bootstrap-icons
+npm install react react-dom
+
+npm run dev
