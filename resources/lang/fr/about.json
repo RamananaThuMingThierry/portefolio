@@ -1,0 +1,13 @@
+{
+    "title": "A PROPOS DE MOI",
+    "developerTitle": "Développeur passionné",
+    "description1": "Développeur web full stack avec une solide expérience dans la création d'applications web modernes et performantes. Mon parcours m'a permis de maîtriser diverses technologies et frameworks pour répondre aux besoins variés de mes clients.",
+    "description2": "Je suis actuellement en train d'élargir mes compétences avec Flutter pour le développement mobile, et j'utilise Figma pour créer des interfaces utilisateur intuitives et esthétiques.",
+    "description3": "Mon objectif est de créer des solutions web qui allient performance technique, design attractif et expérience utilisateur optimale.",
+    "cleanCodeTitle": "Code Propre",
+    "cleanCodeDescription": "Je privilégie un code maintenable, bien structuré et documenté pour garantir la qualité des projets.",
+    "architectureTitle": "Architecture",
+    "architectureDescription": "Je conçois des applications évolutives avec une architecture claire et des bonnes pratiques.",
+    "performanceTitle": "Performance",
+    "performanceDescription": "J’optimise le chargement, le SEO et l’expérience utilisateur pour des sites rapides et efficaces."
+}

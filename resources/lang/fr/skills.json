@@ -1,0 +1,16 @@
+{
+    "title": "Compétences",
+    "subtitle": "Une palette de technologies maîtrisées pour créer des solutions complètes et performantes",
+    "frontend": {
+      "title": "Frontend"
+    },
+    "backend": {
+      "title": "Backend"
+    },
+    "mobile": {
+      "title": "Mobile"
+    },
+    "toolsDesign": {
+      "title": "Outil & Design"
+    }
+}

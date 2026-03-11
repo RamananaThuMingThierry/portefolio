@@ -1,0 +1,28 @@
+{
+    "title": "SERVICES",
+    "subtitle": "Complete solutions to realize your digital projects",
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "Custom web applications with Laravel, React, and Inertia.js. Showcase sites, e-commerce platforms, and high-performance business applications."
+    },
+    "mobileDevelopment": {
+      "title": "Mobile Development",
+      "description": "Cross-platform mobile applications with Flutter. Native iOS and Android interface from a single codebase."
+    },
+    "backendAPI": {
+      "title": "Backend & API",
+      "description": "Design of robust backend architectures, secure RESTful APIs, and optimized database management systems."
+    },
+    "uiuxDesign": {
+      "title": "UI/UX Design",
+      "description": "Creation of interactive mockups and prototypes. Designing modern and intuitive user interfaces focused on the user."
+    },
+    "optimizationPerformance": {
+      "title": "Optimization & Performance",
+      "description": "Performance audits, code optimization, SEO improvement, and speeding up the loading time of your applications."
+    },
+    "consultingSupport": {
+      "title": "Consulting & Support",
+      "description": "Support, maintenance, and technical assistance. Project follow-up with reliable and scalable solutions."
+    }
+}
