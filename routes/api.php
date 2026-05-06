@@ -8,7 +8,7 @@ Route::get('/', [BaseController::class, 'index'])->name('acceuil');
 
 
 Route::get('/contact', function () {
-    return redirect('/#contact');
+    return redirect('/contact');
 })->name('contact');
 
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');

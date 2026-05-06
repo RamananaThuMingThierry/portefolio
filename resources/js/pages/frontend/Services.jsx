@@ -1,124 +1,49 @@
-import React from 'react';
-import { useI18n } from '../../hooks/I18nContext';  // Import du hook de traduction
+import React from "react";
+import { useI18n } from "../../hooks/I18nContext";
+import SectionHeading from "./SectionHeading";
 
-function Services() {
-  const { t } = useI18n();  // Utilisation du hook useI18n pour récupérer la fonction de traduction
+function CheckIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="m5 13 4 4L19 7" />
+    </svg>
+  );
+}
+
+export default function Services() {
+  const { t } = useI18n();
+  const services = t("site.services.items", []);
 
   return (
-    <section id="services" className="services-section py-5">
-      <div className="container">
+    <section id="services" className="section-shell py-15">
+      <SectionHeading
+        kicker={t("site.services.kicker")}
+        title={t("site.services.title")}
+        copy={t("site.services.copy")}
+            align="center"
+      />
 
-        {/* Title */}
-        <div className="text-center mb-4">
-          <h6 className="fw-bold text-uppercase text-white mb-2">{t("services.title")}</h6>
-          <div className="mx-auto services-underline"></div>
-        </div>
-
-        {/* Subtitle */}
-        <p className="text-center mb-5">
-          {t("services.subtitle")}
-        </p>
-
-        {/* Cards */}
-        <div className="row g-4">
-
-          {/* Service 1 - Développement Web */}
-          <div className="col-md-6 col-lg-4">
-            <div className="service-card">
-              <div className="service-icon">
-                <i className="fas fa-code"></i>
-              </div>
-              <h6 className="fw-bold mt-3">{t("services.webDevelopment.title")}</h6>
-              <p className="mb-4">
-                {t("services.webDevelopment.description")}
-              </p>
-              <div className="service-tags">
-                <span className="tag">LARAVEL</span>
-                <span className="tag">React</span>
-                <span className="tag">Inertia.js</span>
-              </div>
+      <div className="mt-12 grid gap-6 lg:grid-cols-3">
+        {services.map((item) => (
+          <article key={item.title} className="glass-panel rounded-[1.8rem] p-7 transition hover:-translate-y-1">
+            <div className="inline-flex rounded-2xl border border-white/10 bg-white/[0.08] px-4 py-3 text-sm font-bold uppercase tracking-[0.22em] text-mint-300">
+              {item.tag}
             </div>
-          </div>
-
-          {/* Service 2 - Développement Mobile */}
-          <div className="col-md-6 col-lg-4">
-            <div className="service-card">
-              <div className="service-icon">
-                <i className="fas fa-mobile-alt"></i>
-              </div>
-              <h6 className="fw-bold mt-3">{t("services.mobileDevelopment.title")}</h6>
-              <p className="mb-4">
-                {t("services.mobileDevelopment.description")}
-              </p>
-              <div className="service-tags">
-                <span className="tag">Flutter</span>
-                <span className="tag">Dart</span>
-                <span className="tag">Firebase</span>
-                <span className="tag">REST API</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Service 3 - Backend & API */}
-          <div className="col-md-6 col-lg-4">
-            <div className="service-card">
-              <div className="service-icon">
-                <i className="fas fa-sitemap"></i>
-              </div>
-              <h6 className="fw-bold mt-3">{t("services.backendAPI.title")}</h6>
-              <p className="mb-4">
-                {t("services.backendAPI.description")}
-              </p>
-              <div className="service-tags">
-                <span className="tag">Laravel</span>
-                <span className="tag">MySQL</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Service 4 - UI/UX Design */}
-          <div className="col-md-6 col-lg-4">
-            <div className="service-card">
-              <div className="service-icon">
-                <i className="fas fa-palette"></i>
-              </div>
-              <h6 className="fw-bold mt-3">{t("services.uiuxDesign.title")}</h6>
-              <p className="mb-0">
-                {t("services.uiuxDesign.description")}
-              </p>
-            </div>
-          </div>
-
-          {/* Service 5 - Optimisation & Performance */}
-          <div className="col-md-6 col-lg-4">
-            <div className="service-card">
-              <div className="service-icon">
-                <i className="fas fa-gauge-high"></i>
-              </div>
-              <h6 className="fw-bold mt-3">{t("services.optimizationPerformance.title")}</h6>
-              <p className="mb-0">
-                {t("services.optimizationPerformance.description")}
-              </p>
-            </div>
-          </div>
-
-          {/* Service 6 - Conseil & Support */}
-          <div className="col-md-6 col-lg-4">
-            <div className="service-card">
-              <div className="service-icon">
-                <i className="fas fa-headset"></i>
-              </div>
-              <h6 className="fw-bold mt-3">{t("services.consultingSupport.title")}</h6>
-              <p className="mb-0">
-                {t("services.consultingSupport.description")}
-              </p>
-            </div>
-          </div>
-
-        </div>
+            <h3 className="mt-5 font-display text-2xl font-bold text-white">{item.title}</h3>
+            <p className="mt-4 text-sm leading-7 text-sand-100/70">{item.description}</p>
+            <ul className="mt-6 space-y-3 text-sm text-sand-50">
+              {item.points.map((point) => (
+                <li key={point} className="flex items-start gap-3">
+                  <span className="mt-0.5 text-mint-300">
+                    <CheckIcon />
+                  </span>
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
       </div>
     </section>
   );
 }
-
-export default Services;

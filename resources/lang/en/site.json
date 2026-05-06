@@ -255,9 +255,9 @@
     "copy": "Websites, Laravel/React applications, hosting and maintenance for founders, SMEs and associations.",
     "navigationTitle": "Navigation",
     "navigation": [
-      { "label": "Services", "href": "#services" },
-      { "label": "Projects", "href": "#projects" },
-      { "label": "Pricing", "href": "#pricing" }
+      { "label": "Services", "href": "/services" },
+      { "label": "Projects", "href": "/projects" },
+      { "label": "Pricing", "href": "/pricing" }
     ],
     "servicesTitle": "Services",
     "services": ["Showcase website", "Web application", "Maintenance"],

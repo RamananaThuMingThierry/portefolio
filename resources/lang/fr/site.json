@@ -255,9 +255,9 @@
     "copy": "Création de sites web, applications Laravel/React, hébergement et maintenance pour entrepreneurs, PME et associations.",
     "navigationTitle": "Navigation",
     "navigation": [
-      { "label": "Services", "href": "#services" },
-      { "label": "Projets", "href": "#projects" },
-      { "label": "Tarifs", "href": "#pricing" }
+      { "label": "Services", "href": "/services" },
+      { "label": "Projets", "href": "/projects" },
+      { "label": "Tarifs", "href": "/pricing" }
     ],
     "servicesTitle": "Services",
     "services": ["Site vitrine", "Application web", "Maintenance"],

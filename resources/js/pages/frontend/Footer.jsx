@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useI18n } from "../../hooks/I18nContext";
 
 const socialIcons = {
@@ -29,9 +30,9 @@ export default function Footer() {
             </p>
             <div className="mt-4 space-y-3 text-sm text-sand-100/70">
               {navigation.map((item) => (
-                <a key={item.href} href={item.href} className="block transition hover:text-white">
+                <Link key={item.href} to={item.href} className="block transition hover:text-white">
                   {item.label}
-                </a>
+                </Link>
               ))}
             </div>
           </div>

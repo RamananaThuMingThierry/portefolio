@@ -85,9 +85,9 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-shell py-24">
-      <div className="grid gap-8 lg:grid-cols-[0.88fr_1.12fr]">
-        <div className="glass-panel rounded-[2rem] p-8">
+    <section id="contact" className="section-shell py-16 md:py-24">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:gap-8">
+        <div className="glass-panel overflow-hidden rounded-[1.75rem] p-4 sm:p-6 md:rounded-[2rem] md:p-8">
           <p className="section-kicker">{t("site.contact.kicker")}</p>
           <h2 className="section-title mt-4">{t("site.contact.title")}</h2>
           <p className="section-copy mt-4">{t("site.contact.copy")}</p>
@@ -97,19 +97,19 @@ export default function Contact() {
               <a
                 key={item.label}
                 href={item.href}
-                className="flex items-center justify-between rounded-[1.5rem] border border-white/10 bg-white/[0.06] px-5 py-4 transition hover:bg-white/10"
+                className="flex flex-col gap-2 rounded-[1.25rem] border border-white/10 bg-white/[0.06] px-4 py-4 transition hover:bg-white/10 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:rounded-[1.5rem] sm:px-5"
               >
-                <div>
+                <div className="min-w-0 flex-1">
                   <p className="text-sm text-sand-100/60">{item.label}</p>
-                  <p className="mt-1 font-semibold text-white">{item.value}</p>
+                  <p className="mt-1 break-words font-semibold text-white">{item.value}</p>
                 </div>
-                <span className="text-mint-300">+</span>
+                <span className="text-mint-300 sm:shrink-0">+</span>
               </a>
             ))}
           </div>
 
-          <div className="mt-8 rounded-[1.6rem] border border-mint-300/20 bg-mint-400/10 p-5">
-            <p className="text-sm font-bold uppercase tracking-[0.26em] text-mint-300">
+          <div className="mt-8 rounded-[1.35rem] border border-mint-300/20 bg-mint-400/10 p-4 sm:rounded-[1.6rem] sm:p-5">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-mint-300 sm:text-sm sm:tracking-[0.26em]">
               {t("site.contact.availabilityLabel")}
             </p>
             <p className="mt-3 text-lg font-semibold text-white">{t("site.contact.availabilityTitle")}</p>
@@ -117,29 +117,29 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="rounded-[2rem] border border-white/10 bg-sand-50 p-8 text-ink-950 shadow-[0_24px_80px_rgba(3,8,18,0.35)]">
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              <p className="font-display text-sm font-bold uppercase tracking-[0.28em] text-ink-800">
+        <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-sand-50 p-4 text-ink-950 shadow-[0_24px_80px_rgba(3,8,18,0.35)] sm:p-6 md:rounded-[2rem] md:p-8">
+          <div className="grid gap-4 sm:grid-cols-[1fr_auto] sm:items-start">
+            <div className="min-w-0">
+              <p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-ink-800 sm:text-sm sm:tracking-[0.28em]">
                 {t("site.contact.formKicker")}
               </p>
-              <h3 className="mt-3 font-display text-3xl font-bold text-ink-950">
+              <h3 className="mt-3 text-2xl font-display font-bold text-ink-950 sm:text-3xl">
                 {t("site.contact.formTitle")}
               </h3>
             </div>
-            <div className="rounded-full bg-ink-950 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-sand-50">
+            <div className="w-fit max-w-full rounded-2xl bg-ink-950 px-3 py-2 text-center text-[10px] font-bold uppercase tracking-[0.12em] text-sand-50 sm:rounded-full sm:px-4 sm:text-xs sm:tracking-[0.2em]">
               {t("site.contact.replyTime")}
             </div>
           </div>
 
           {successMessage ? (
-            <div className="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-medium text-emerald-700">
+            <div className="mt-6 break-words rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-medium text-emerald-700">
               {successMessage}
             </div>
           ) : null}
 
           {feedbackMessage ? (
-            <div className="mt-6 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-medium text-red-700">
+            <div className="mt-6 break-words rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-medium text-red-700">
               {feedbackMessage}
             </div>
           ) : null}
@@ -156,7 +156,7 @@ export default function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder={t("site.contact.namePlaceholder")}
-                className={`w-full rounded-2xl border bg-white px-4 py-3.5 text-sm outline-none transition ${
+                className={`w-full min-w-0 rounded-2xl border bg-white px-4 py-3.5 text-sm outline-none transition ${
                   errors.name
                     ? "border-red-400 ring-2 ring-red-100"
                     : "border-slate-200 focus:border-mint-400"
@@ -176,7 +176,7 @@ export default function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder={t("site.contact.emailPlaceholder")}
-                className={`w-full rounded-2xl border bg-white px-4 py-3.5 text-sm outline-none transition ${
+                className={`w-full min-w-0 rounded-2xl border bg-white px-4 py-3.5 text-sm outline-none transition ${
                   errors.email
                     ? "border-red-400 ring-2 ring-red-100"
                     : "border-slate-200 focus:border-mint-400"
@@ -196,7 +196,7 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder={t("site.contact.messagePlaceholder")}
-                className={`w-full rounded-2xl border bg-white px-4 py-3.5 text-sm outline-none transition ${
+                className={`w-full min-w-0 rounded-2xl border bg-white px-4 py-3.5 text-sm outline-none transition ${
                   errors.message
                     ? "border-red-400 ring-2 ring-red-100"
                     : "border-slate-200 focus:border-mint-400"

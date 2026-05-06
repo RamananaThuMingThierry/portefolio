@@ -1,80 +1,60 @@
-import React from 'react';
-import { useI18n } from '../../hooks/I18nContext'; // Import du hook de traduction
+import React from "react";
+import { useI18n } from "../../hooks/I18nContext";
 
-function About() {
-  const { t } = useI18n();  // Utilisation du hook useI18n pour récupérer la fonction de traduction
+function CheckIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="m5 13 4 4L19 7" />
+    </svg>
+  );
+}
+
+export default function About() {
+  const { t } = useI18n();
+  const aboutReasons = t("site.about.reasons", []);
 
   return (
-    <section id="apropos" className="py-5 bg-white">
-      <div className="container">
-        {/* Title */}
-        <div className="text-center mb-5">
-          <h6 className="text-uppercase mb-2 titre-sections">{t("about.title")}</h6>
-          <div className="mx-auto about_underline"></div>
+    <section className="section-shell py-15">
+      <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="p-8">
+          <p className="section-kicker">{t("site.about.kicker")}</p>
+          <h2 className="section-title mt-4">{t("site.about.title")}</h2>
+          <p className="mt-5 max-w-2xl text-base leading-8 text-sand-100/72">{t("site.about.descriptionOne")}</p>
+          <p className="mt-4 max-w-2xl text-base leading-8 text-sand-100/72">{t("site.about.descriptionTwo")}</p>
         </div>
 
-        {/* Content */}
-        <div className="row align-items-center g-4 mb-5">
-          {/* Left block (image / illustration) */}
-          <div className="col-lg-6">
-            <div className="about-visual d-flex align-items-center justify-content-center">
-              <i className="fas fa-code fa-5x text_color"></i>
-            </div>
-          </div>
-
-          {/* Right block (text) */}
-          <div className="col-lg-6">
-            <h5 className="fw-bold mb-3 text_color">{t("about.developerTitle")}</h5>
-
-            <p className="text-muted mb-3">
-              {t("about.description1")}
-            </p>
-
-            <p className="text-muted mb-3">
-              {t("about.description2")}
-            </p>
-
-            <p className="text-muted mb-0">
-              {t("about.description3")}
-            </p>
-          </div>
-        </div>
-
-        {/* Cards */}
-        <div className="row g-4">
-          <div className="col-md-4">
-            <div className="about-card">
-              <div className="about-card__icon"><i className="fas fa-code"></i></div>
-              <h6 className="fw-bold mb-2">{t("about.cleanCodeTitle")}</h6>
-              <p className="mb-0">
-                {t("about.cleanCodeDescription")}
+        <div className="grid gap-5">
+          <div className="grid gap-5 md:grid-cols-2">
+            <article className="glass-panel rounded-[1.8rem] p-6">
+              <p className="text-xs font-bold uppercase tracking-[0.26em] text-mint-300">
+                {t("site.about.techLabel")}
               </p>
-            </div>
+              <p className="mt-4 font-display text-2xl font-bold text-white">{t("site.about.techValue")}</p>
+            </article>
+
+            <article className="glass-panel rounded-[1.8rem] p-6">
+              <p className="text-xs font-bold uppercase tracking-[0.26em] text-mint-300">
+                {t("site.about.approachLabel")}
+              </p>
+              <p className="mt-4 font-display text-2xl font-bold text-white">{t("site.about.approachValue")}</p>
+            </article>
           </div>
 
-          <div className="col-md-4">
-            <div className="about-card">
-              <div className="about-card__icon"><i className="fas fa-layer-group"></i></div>
-              <h6 className="fw-bold mb-2">{t("about.architectureTitle")}</h6>
-              <p className="mb-0">
-                {t("about.architectureDescription")}
-              </p>
-            </div>
-          </div>
-
-          <div className="col-md-4">
-            <div className="about-card">
-              <div className="about-card__icon"><i className="fas fa-bolt"></i></div>
-              <h6 className="fw-bold mb-2">{t("about.performanceTitle")}</h6>
-              <p className="mb-0">
-                {t("about.performanceDescription")}
-              </p>
-            </div>
-          </div>
+          <article className="glass-panel rounded-[1.8rem] p-6">
+            <h3 className="font-display text-2xl font-bold text-white">{t("site.about.reasonsTitle")}</h3>
+            <ul className="mt-6 space-y-3 text-sm text-sand-50">
+              {aboutReasons.map((reason) => (
+                <li key={reason} className="flex items-start gap-3">
+                  <span className="mt-0.5 text-mint-300">
+                    <CheckIcon />
+                  </span>
+                  <span>{reason}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
         </div>
       </div>
     </section>
   );
 }
-
-export default About;
