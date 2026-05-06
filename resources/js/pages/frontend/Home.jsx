@@ -174,7 +174,7 @@ export default function Home() {
 
         <section className="section-shell py-15">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="glass-panel rounded-[2rem] p-8">
+            <div className="p-8">
               <p className="section-kicker">{t("site.about.kicker")}</p>
               <h2 className="section-title mt-4">{t("site.about.title")}</h2>
               <p className="mt-5 max-w-2xl text-base leading-8 text-sand-100/72">{t("site.about.descriptionOne")}</p>
@@ -251,7 +251,6 @@ export default function Home() {
                   <h3 className="mt-5 font-display text-2xl font-bold text-white">{project.title}</h3>
                   <p className="mt-4 text-sm leading-7 text-sand-100/70">{project.description}</p>
                   <div className="mt-6 flex items-center justify-between">
-                    <p className="text-sm font-semibold text-mint-300">{project.outcome}</p>
                     <span className="inline-flex items-center gap-2 text-sm font-bold text-white transition group-hover:text-mint-300">
                       {t("site.projects.viewCase")}
                       <ArrowUpRightIcon />
@@ -291,7 +290,7 @@ export default function Home() {
             copy={t("site.pricing.copy")}
           />
 
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 lg:grid-cols-4">
             {pricing.map((plan) => (
               <article
                 key={plan.name}
@@ -361,18 +360,6 @@ export default function Home() {
                 </div>
               </article>
             ))}
-          </div>
-
-          <div className="mt-10 rounded-[2rem] border text-center border-mint-300/20 bg-mint-400/10 p-8">
-            <p className="font-display text-2xl font-bold text-white">{t("site.testimonials.ctaTitle")}</p>
-            <p className="mt-3 text-sm leading-7">{t("site.testimonials.ctaCopy")}</p>
-            <a
-              href="#contact"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-mint-400 px-6 py-3 text-sm font-bold text-ink-950 transition hover:bg-mint-300"
-            >
-              {t("site.testimonials.ctaButton")}
-              <ArrowUpRightIcon />
-            </a>
           </div>
         </section>
 

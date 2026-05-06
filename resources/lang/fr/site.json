@@ -9,7 +9,7 @@
     "panelTitle": "Design net, code robuste, expérience fluide.",
     "panelCopy": "Chaque livraison combine stratégie, interface, performance et capacité d'évolution.",
     "stackLabel": "Stack favorite",
-    "stack": ["Laravel", "React", "Tailwind CSS", "MySQL", "Flutter", "API REST"],
+    "stack": ["Laravel", "React", "Tailwind CSS", "Bootstrap", "MySQL", "Flutter", "API REST"],
     "stats": [
       { "value": "48h", "label": "pour cadrer une première proposition claire" },
       { "value": "100%", "label": "de code pensé pour être maintenable et réutilisable" },
@@ -70,7 +70,7 @@
         "description": "Refonte du portfolio en une vitrine premium pensée pour mieux présenter l'offre, rassurer les prospects et accélérer la prise de contact.",
         "outcome": "Positionnement plus net et plus crédible",
         "image": "/projets/portefolio.png",
-        "tags": ["Branding", "React", "Laravel"],
+        "tags": ["React", "Laravel", "Twailwind CSS"],
         "url": "http://antatech-solutions.com/"
       },
       {
@@ -78,7 +78,7 @@
         "description": "Plateforme associative pour gérer les membres, cotisations, événements et communications avec une logique d'administration simple à prendre en main.",
         "outcome": "Gestion centralisée du quotidien",
         "image": "/projets/aeutna.png",
-        "tags": ["Gestion", "Dashboard", "MySQL"],
+        "tags": ["Laravel", "React", "Bootstrap", "MySQL"],
         "url": "https://aeutna.antatech-solutions.com/"
       },
       {
@@ -86,7 +86,7 @@
         "description": "Expérience digitale orientée voyage pour valoriser les circuits et fluidifier la réservation de séjours authentiques à Madagascar.",
         "outcome": "Présentation plus engageante de l'offre",
         "image": "/projets/wofmdg.png",
-        "tags": ["Tourisme", "UX", "Conversion"],
+        "tags": ["Laravel", "Bootstrap", "MySQL"],
         "url": "https://world-of-madagascar-tour.com/"
       }
     ]

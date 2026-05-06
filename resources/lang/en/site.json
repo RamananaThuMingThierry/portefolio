@@ -9,7 +9,7 @@
     "panelTitle": "Sharp design, reliable code, smooth experience.",
     "panelCopy": "Every delivery combines strategy, interface design, performance and room for future growth.",
     "stackLabel": "Preferred stack",
-    "stack": ["Laravel", "React", "Tailwind CSS", "MySQL", "Flutter", "REST API"],
+    "stack": ["Laravel", "React", "Tailwind CSS", "Bootstrap", "MySQL", "Flutter", "API REST"],
     "stats": [
       { "value": "48h", "label": "to frame a first clear proposal" },
       { "value": "100%", "label": "of the codebase designed for maintenance and reuse" },
@@ -70,7 +70,7 @@
         "description": "Portfolio redesign into a premium showcase built to present the offer more clearly, reassure prospects and accelerate contact.",
         "outcome": "Sharper and more credible positioning",
         "image": "/projets/portefolio.png",
-        "tags": ["Branding", "React", "Laravel"],
+        "tags": ["React", "Laravel", "Twailwind CSS"],
         "url": "http://antatech-solutions.com/"
       },
       {
@@ -78,7 +78,7 @@
         "description": "Association platform to manage members, dues, events and communications through an admin flow that stays simple to use.",
         "outcome": "Centralized daily operations",
         "image": "/projets/aeutna.png",
-        "tags": ["Management", "Dashboard", "MySQL"],
+        "tags": ["Laravel", "React", "Bootstrap", "MySQL"],
         "url": "https://aeutna.antatech-solutions.com/"
       },
       {
@@ -86,7 +86,7 @@
         "description": "Travel-focused digital experience built to showcase tours and streamline bookings for authentic trips in Madagascar.",
         "outcome": "More engaging service presentation",
         "image": "/projets/wofmdg.png",
-        "tags": ["Travel", "UX", "Conversion"],
+        "tags": ["Laravel", "Bootstrap", "MySQL"],
         "url": "https://world-of-madagascar-tour.com/"
       }
     ]
