@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
 import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [
@@ -9,13 +10,14 @@ export default defineConfig({
       refresh: true,
     }),
     react(),
+    tailwindcss(),
   ],
   server: {
     host: "0.0.0.0",     // écoute réseau (LAN)
     port: 5173,
     strictPort: true,
     hmr: {
-      host: "192.168.97.2", // ton IP
+      host: "192.168.1.174", // ton IP
       port: 5173,
     },
   },

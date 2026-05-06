@@ -1,69 +1,95 @@
-import React from 'react';
-import { useI18n } from '../../hooks/I18nContext';  // Import du hook de traduction
+import React from "react";
+import { useI18n } from "../../hooks/I18nContext";
 
-function Footer() {
-  const { t } = useI18n();  // Utilisation du hook useI18n pour récupérer la fonction de traduction
+const socialIcons = {
+  GitHub: "/images/github.png",
+  WhatsApp: "/images/whatsapp.png",
+  LinkedIn: "/images/linkedin.png",
+  Facebook: "/images/facebook.png",
+};
+
+export default function Footer() {
+  const { t } = useI18n();
+  const navigation = t("site.footer.navigation", []);
+  const services = t("site.footer.services", []);
+  const socials = t("site.footer.socials", []);
 
   return (
-    <footer className="py-5">
-      <div className="container">
-        <div className="row">
-          {/* First Column - About */}
-          <div className="col-md-4 h-100 mb-3">
-            <div className="d-flex justify-content-start align-items-center">
-              <img src="/logo/logo.png" width="75" height="75" className="rounded-2" alt="Logo" />
-            </div>
-            <p className="text-start">
-              {t("footer.description")}
+    <footer className="border-t border-white/10 py-14">
+      <div className="section-shell">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <p className="font-display text-2xl font-bold text-white">{t("site.footer.brand")}</p>
+            <p className="mt-4 max-w-sm text-sm leading-7 text-sand-100/70">{t("site.footer.copy")}</p>
+          </div>
+
+          <div>
+            <p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-mint-300">
+              {t("site.footer.navigationTitle")}
             </p>
+            <div className="mt-4 space-y-3 text-sm text-sand-100/70">
+              {navigation.map((item) => (
+                <a key={item.href} href={item.href} className="block transition hover:text-white">
+                  {item.label}
+                </a>
+              ))}
+            </div>
           </div>
 
-          {/* Second Column - Useful Links */}
-          <div className="col-md-4 h-100 mb-3">
-            <h6>{t("footer.usefulLinksTitle")}</h6>
-            <ul className="list-unstyled">
-              <li><a href="#accueil" className="text-decoration-none bottom-link text-white-50">{t("footer.home")}</a></li>
-              <li><a href="#apropos" className="text-decoration-none bottom-link text-white-50">{t("footer.about")}</a></li>
-              <li><a href="#services" className="text-decoration-none bottom-link text-white-50">{t("footer.services")}</a></li>
-              <li><a href="#competences" className="text-decoration-none bottom-link text-white-50">{t("footer.skills")}</a></li>
-              <li><a href="#projets" className="text-decoration-none bottom-link text-white-50">{t("footer.projects")}</a></li>
-              <li><a href="#contact" className="text-decoration-none bottom-link text-white-50">{t("footer.contact")}</a></li>
-            </ul>
+          <div>
+            <p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-mint-300">
+              {t("site.footer.servicesTitle")}
+            </p>
+            <div className="mt-4 space-y-3 text-sm text-sand-100/70">
+              {services.map((item) => (
+                <p key={item} className="block">
+                  {item}
+                </p>
+              ))}
+            </div>
           </div>
 
-          {/* Third Column - Follow Us */}
-          <div className="col-md-4 h-100 mb-3">
-            <h6 className="text-white text-center mb-3">{t("footer.followUs")}</h6>
-            <div className="d-flex align-items-center justify-content-center gap-1">
-              <a href="https://www.facebook.com/profile.php?id=61550970576526&sk=photos" title='facebook' target="_blank" className="text-white-50">
-                <img style={{ width: '45px', height: '45px' }} src="/images/facebook.png" alt="Facebook" />
+          <div>
+            <p className="font-display text-sm font-bold uppercase tracking-[0.24em] text-mint-300">
+              {t("site.footer.contactTitle")}
+            </p>
+            <div className="mt-4 space-y-3 text-sm text-sand-100/70">
+              <a href={`mailto:${t("site.footer.email")}`} className="block transition hover:text-white">
+                {t("site.footer.email")}
               </a>
-              <a href="https://www.linkedin.com/in/thierry-ramanana-thu-ming-77bb0b291/" title='linkedIn' target="_blank" className="text-white-50">
-                <img style={{ width: '45px', height: '45px' }} src="/images/linkedin.png" alt="LinkedIn" />
-              </a>
-              <a href="https://wa.me/261327563770" className="text-white-50" title='whatsApp'>
-                <img style={{ width: '45px', height: '45px' }} src="/images/whatsapp.png" alt="WhatsApp" />
-              </a>
-              <a href="https://mail.google.com/mail/?view=cm&to=ramananathumingthierry@gmail.com" title='Gmail' target="_blank" className="text-white-50">
-                <img style={{ width: '45px', height: '45px' }} src="/images/gmail.png" alt="Gmail" />
-              </a>
-              <a href="https://github.com/RamananaThuMingThierry" target="_blank" title='Github' className="btn btn-outline-light btn-icon" aria-label="GitHub">
-                <i className="fab fa-github"></i>
-              </a>
+              <p>{t("site.footer.location")}</p>
+            </div>
+
+            <div className="mt-5 flex flex-wrap gap-3">
+              {socials.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  title={item.label}
+                  className="group relative inline-flex"
+                >
+                  <span className="pointer-events-none absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border border-white/10 bg-ink-900 px-3 py-1 text-xs font-semibold whitespace-nowrap text-white opacity-0 shadow-lg transition duration-200 group-hover:-translate-y-1 group-hover:opacity-100">
+                    {item.label}
+                  </span>
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/[0.06] transition hover:bg-white/[0.1]">
+                    <img
+                      src={socialIcons[item.label]}
+                      alt={item.label}
+                      className="h-6 w-6 object-contain"
+                    />
+                  </span>
+                </a>
+              ))}
             </div>
           </div>
         </div>
 
-        <hr id="footer-divider" className="my-4" />
-
-        <div className="text-center">
-          <p className="mb-0 text-white-50">
-            &copy; <span className="fw-bold text-success">{new Date().getFullYear()}</span> AntaTech Solutions.
-          </p>
+        <div className="mt-10 border-t border-white/10 pt-6 text-center">
+          <p className="text-sm text-sand-100/60">{t("site.footer.copyright")}</p>
         </div>
       </div>
     </footer>
   );
 }
-
-export default Footer;

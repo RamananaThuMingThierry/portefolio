@@ -1,0 +1,275 @@
+{
+  "hero": {
+    "badge": "Plateforme digitale premium pour entreprises et porteurs de projet",
+    "title": "Je conçois des plateformes modernes qui structurent votre croissance.",
+    "description": "Sites vitrines, applications métier, outils internes et expériences clients : AntaTech transforme vos idées en produits clairs, rapides et prêts à convertir.",
+    "primaryCta": "Parler de votre projet",
+    "secondaryCta": "Voir les projets",
+    "panelLabel": "Positionnement",
+    "panelTitle": "Design net, code robuste, expérience fluide.",
+    "panelCopy": "Chaque livraison combine stratégie, interface, performance et capacité d'évolution.",
+    "stackLabel": "Stack favorite",
+    "stack": ["Laravel", "React", "Tailwind CSS", "MySQL", "Flutter", "API REST"],
+    "stats": [
+      { "value": "48h", "label": "pour cadrer une première proposition claire" },
+      { "value": "100%", "label": "de code pensé pour être maintenable et réutilisable" },
+      { "value": "3+", "label": "projets réalisés" }
+    ]
+  },
+  "services": {
+    "kicker": "Services",
+    "title": "Ce que je peux construire pour vous",
+    "copy": "Des solutions simples à comprendre, modernes visuellement et prêtes à évoluer selon votre activité.",
+    "items": [
+      {
+        "tag": "Web",
+        "title": "Site vitrine professionnel",
+        "description": "Un site moderne pour présenter votre entreprise, vos services, vos contacts et renforcer votre crédibilité.",
+        "points": ["Design responsive", "Page contact", "Optimisation basique SEO"]
+      },
+      {
+        "tag": "App",
+        "title": "Application web de gestion",
+        "description": "Une plateforme adaptée à vos besoins : membres, clients, stock, paiements, demandes ou reporting.",
+        "points": ["Laravel / API", "Dashboard admin", "Authentification"]
+      },
+      {
+        "tag": "Support",
+        "title": "Hébergement & maintenance",
+        "description": "Mise en ligne, configuration, sauvegarde et maintenance pour garder votre site stable et sécurisé.",
+        "points": ["Déploiement serveur", "Nom de domaine", "Support technique"]
+      }
+    ]
+  },
+  "about": {
+    "kicker": "À propos",
+    "title": "Je crée des sites qui donnent une vraie image professionnelle",
+    "descriptionOne": "Je suis développeur web basé à Antananarivo. J’aide les PME, associations et entrepreneurs à avoir une présence en ligne claire, moderne et crédible.",
+    "descriptionTwo": "Mon objectif n’est pas seulement de coder, mais de vous aider à attirer plus de clients grâce à un site rapide, bien structuré et facile à utiliser.",
+    "techLabel": "Technologies",
+    "techValue": "Laravel + React",
+    "approachLabel": "Approche",
+    "approachValue": "Simple & efficace",
+    "reasonsTitle": "Pourquoi travailler avec moi ?",
+    "reasons": [
+      "Communication claire et rapide",
+      "Design moderne qui inspire confiance",
+      "Site optimisé pour mobile",
+      "Solutions adaptées à votre budget",
+      "Support après mise en ligne"
+    ]
+  },
+  "projects": {
+    "kicker": "Projets",
+    "title": "Des réalisations orientées usage, clarté et efficacité opérationnelle.",
+    "copy": "Chaque projet cherche un équilibre entre image, simplicité d'utilisation et impact concret sur l'activité.",
+    "viewCase": "Explorer",
+    "items": [
+      {
+        "title": "AntaTech Solutions",
+        "description": "Refonte du portfolio en une vitrine premium pensée pour mieux présenter l'offre, rassurer les prospects et accélérer la prise de contact.",
+        "outcome": "Positionnement plus net et plus crédible",
+        "image": "/projets/portefolio.png",
+        "tags": ["Branding", "React", "Laravel"],
+        "url": "http://antatech-solutions.com/"
+      },
+      {
+        "title": "A.E.U.T.N.A",
+        "description": "Plateforme associative pour gérer les membres, cotisations, événements et communications avec une logique d'administration simple à prendre en main.",
+        "outcome": "Gestion centralisée du quotidien",
+        "image": "/projets/aeutna.png",
+        "tags": ["Gestion", "Dashboard", "MySQL"],
+        "url": "https://aeutna.antatech-solutions.com/"
+      },
+      {
+        "title": "World of Madagascar Tour",
+        "description": "Expérience digitale orientée voyage pour valoriser les circuits et fluidifier la réservation de séjours authentiques à Madagascar.",
+        "outcome": "Présentation plus engageante de l'offre",
+        "image": "/projets/wofmdg.png",
+        "tags": ["Tourisme", "UX", "Conversion"],
+        "url": "https://world-of-madagascar-tour.com/"
+      }
+    ]
+  },
+  "method": {
+    "kicker": "Méthode",
+    "title": "Un processus simple et clair",
+    "copy": "Le client doit comprendre comment tu travailles. Ça rassure et ça montre ton professionnalisme.",
+    "steps": [
+      {
+        "title": "Discussion",
+        "description": "On clarifie votre besoin, vos objectifs, vos pages et les fonctionnalités nécessaires."
+      },
+      {
+        "title": "Maquette",
+        "description": "Je propose une structure claire avant de commencer le développement complet."
+      },
+      {
+        "title": "Production",
+        "description": "Création du site ou de l’application avec une base propre, moderne et maintenable."
+      },
+      {
+        "title": "Livraison",
+        "description": "Mise en ligne, tests, ajustements et accompagnement après la livraison."
+      }
+    ]
+  },
+  "pricing": {
+    "kicker": "Tarifs",
+    "title": "Des offres simples pour démarrer",
+    "copy": "Les prix doivent être adaptés selon le client, les pages, les fonctionnalités et le délai.",
+    "plans": [
+      {
+        "name": "Starter",
+        "description": "Pour une présence simple et professionnelle.",
+        "price": "250k Ar",
+        "timeline": "à partir de",
+        "features": ["1 à 3 pages", "Design responsive", "Formulaire contact"],
+        "featured": false
+      },
+      {
+        "name": "Business",
+        "description": "Pour PME, restaurants, services et entrepreneurs.",
+        "price": "600k Ar",
+        "timeline": "à partir de",
+        "features": ["4 à 7 pages", "SEO de base", "Mise en ligne", "Support initial"],
+        "badge": "Populaire",
+        "featured": true
+      },
+      {
+        "name": "Application",
+        "description": "Pour un besoin spécifique avec espace admin.",
+        "price": "Sur devis",
+        "timeline": "selon fonctionnalités",
+        "features": ["Authentification", "Dashboard admin", "Base de données"],
+        "featured": false
+      },
+      {
+        "name": "Hébergement",
+        "description": "Pour un client qui a déjà un projet et souhaite seulement l’hébergement.",
+        "price": "120 000 Ar/an",
+        "timeline": "ou 10 000 Ar/mois",
+        "features": ["Mise en ligne du site", "Hébergement du projet existant", "Accompagnement au démarrage"],
+        "featured": false
+      }
+    ],
+    "notice": "Si vous choisissez la création d’un site web, l’hébergement est offert gratuitement pendant 1 an."
+  },
+  "testimonials": {
+    "kicker": "Confiance",
+    "title": "Ce que les clients peuvent dire",
+    "copy": "Remplace ces textes par de vrais avis dès que tu as tes premiers clients.",
+    "items": [
+      {
+        "quote": "Travail propre, communication claire et livraison rapide. Le site donne une image beaucoup plus professionnelle.",
+        "initial": "R",
+        "name": "Responsable PME",
+        "role": "Responsable PME",
+        "tag": "Site vitrine"
+      },
+      {
+        "quote": "La plateforme nous aide à organiser les données et à gagner du temps dans la gestion quotidienne.",
+        "initial": "A",
+        "name": "Association locale",
+        "role": "Association locale",
+        "tag": "Application web"
+      },
+      {
+        "quote": "Bonne écoute, design moderne et accompagnement jusqu’à la mise en ligne.",
+        "initial": "E",
+        "name": "Entrepreneur",
+        "role": "Entrepreneur",
+        "tag": "Landing page"
+      }
+    ],
+    "ctaTitle": "Vous avez une idée de projet web ?",
+    "ctaCopy": "Discutons de votre besoin et transformons-le en solution concrète, moderne et utile pour votre activité.",
+    "ctaButton": "Parler de votre projet"
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Parlons d'un site ou d'une plateforme à la hauteur de vos objectifs.",
+    "copy": "Décrivez votre besoin, votre contexte et votre niveau d'urgence. Je reviens vers vous avec une réponse claire et exploitable.",
+    "channels": [
+      {
+        "label": "Email",
+        "value": "ramananathumingthierry@gmail.com",
+        "href": "mailto:ramananathumingthierry@gmail.com"
+      },
+      {
+        "label": "Téléphone",
+        "value": "+261 32 756 3770",
+        "href": "tel:+261327563770"
+      },
+      {
+        "label": "Localisation",
+        "value": "Antananarivo, Madagascar",
+        "href": "https://maps.google.com/?q=Antananarivo,Madagascar"
+      }
+    ],
+    "availabilityLabel": "Disponibilité",
+    "availabilityTitle": "Nouveaux projets acceptés selon planning.",
+    "availabilityCopy": "Idéal pour une refonte, un lancement de service ou la mise au propre d'une plateforme existante.",
+    "formKicker": "Brief",
+    "formTitle": "Envoyer un message",
+    "replyTime": "Réponse sous 24h à 48h",
+    "nameLabel": "Nom",
+    "namePlaceholder": "Votre nom ou votre entreprise",
+    "emailLabel": "Email",
+    "emailPlaceholder": "vous@entreprise.com",
+    "messageLabel": "Projet",
+    "messagePlaceholder": "Décrivez votre besoin, le contexte et ce que vous attendez de la plateforme.",
+    "submit": "Envoyer le brief",
+    "sending": "Envoi en cours...",
+    "validation": {
+      "nameRequired": "Veuillez renseigner votre nom ou le nom de votre entreprise.",
+      "emailRequired": "Veuillez renseigner votre adresse email pour que je puisse vous répondre.",
+      "emailInvalid": "L’adresse email saisie n’est pas valide. Vérifiez le format, par exemple nom@entreprise.com.",
+      "messageRequired": "Veuillez décrire votre besoin pour que je comprenne votre projet.",
+      "formIncomplete": "Le formulaire n’a pas été envoyé. Merci de corriger les champs indiqués ci-dessous.",
+      "sendFailed": "Le message n’a pas pu être envoyé pour le moment. Merci de réessayer dans un instant."
+    },
+    "successMessage": "Votre brief a bien été envoyé. Je vous répondrai dès que possible."
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "Questions fréquentes des clients",
+    "copy": "Quelques réponses claires aux questions qui reviennent le plus avant le lancement d'un site ou d'une plateforme.",
+    "items": [
+      {
+        "question": "Combien de temps faut-il pour créer un site ?",
+        "answer": "Un site vitrine simple peut prendre quelques jours à deux semaines selon le contenu, les pages et les validations."
+      },
+      {
+        "question": "Est-ce que l’hébergement est inclus ?",
+        "answer": "L’hébergement peut être inclus selon la formule choisie. Il peut aussi être géré séparément si vous avez déjà votre propre solution."
+      },
+      {
+        "question": "Puis-je modifier le contenu après livraison ?",
+        "answer": "Oui. Le site peut être conçu pour vous permettre de modifier facilement les textes, images ou informations après la mise en ligne."
+      }
+    ]
+  },
+  "footer": {
+    "brand": "AntaTech Solutions",
+    "copy": "Création de sites web, applications Laravel/React, hébergement et maintenance pour entrepreneurs, PME et associations.",
+    "navigationTitle": "Navigation",
+    "navigation": [
+      { "label": "Services", "href": "#services" },
+      { "label": "Projets", "href": "#projects" },
+      { "label": "Tarifs", "href": "#pricing" }
+    ],
+    "servicesTitle": "Services",
+    "services": ["Site vitrine", "Application web", "Maintenance"],
+    "contactTitle": "Contact",
+    "email": "contact@antatech-solutions.com",
+    "location": "Antananarivo, Madagascar",
+    "socials": [
+      { "label": "GitHub", "href": "https://github.com/RamananaThuMingThierry" },
+      { "label": "WhatsApp", "href": "https://wa.me/261327563770" },
+      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/thierry-ramanana-thu-ming-77bb0b291/" },
+      { "label": "Facebook", "href": "https://www.facebook.com/profile.php?id=61550970576526&sk=photos" }
+    ],
+    "copyright": "© 2026 AntaTech Solutions. Tous droits réservés."
+  }
+}

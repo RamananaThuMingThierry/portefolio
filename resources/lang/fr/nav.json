@@ -1,10 +1,10 @@
 {
-    "home": "Accueil",
-    "about": "À propos",
-    "services": "Services",
-    "skills": "Compétences",
-    "projects": "Projets",
-    "contact": "Contact",
-    "language": "Langue",
-    "downloadCV": "Télécharger CV"
+  "services": "Services",
+  "projects": "Projets",
+  "method": "Méthode",
+  "pricing": "Tarifs",
+  "contact": "Contact",
+  "cta": "Démarrer un projet",
+  "tagline": "Plateformes web & expériences digitales",
+  "toggleMenu": "Ouvrir le menu"
 }
